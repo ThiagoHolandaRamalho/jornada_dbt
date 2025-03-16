@@ -2,8 +2,9 @@ with tabela as (
 
     select 
     * 
-    from {{ref("raw_adventure_vendas_net")}}
+    from {{source('AdventureWorksDW2019','vendas_net')}}
 
 )
+
 
 select * from tabela

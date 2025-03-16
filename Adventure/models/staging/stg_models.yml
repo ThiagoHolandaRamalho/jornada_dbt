@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_adventure_vendas_net
+    description: "Tabela de vendas com informações detalhadas sobre transações."
+    columns:
+      - name: ID_Venda
+        description: "Identificador único da venda."
+        data_tests:
+          - not_null: {}
+          - unique: {}
+
+      - name: Data_Venda
+        description: "Data em que a venda ocorreu."
+        data_tests:
+          - not_null: {}
+
+      - name: Produto
+        description: "Nome do produto vendido."
+        data_tests:
+          - not_null: {}
+
+      - name: Quantidade
+        description: "Quantidade de itens vendidos."
+        data_tests:
+          - not_null: {}
+
+      - name: Valor_Total
+        description: "Valor total da venda em moeda local."
+        data_tests:
+          - not_null: {}
+          

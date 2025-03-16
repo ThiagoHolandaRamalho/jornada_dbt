@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: AdventureWorksDW2019
+    schema: dbo
+    tables:
+      - name: vendas_net
+      - name: DimScenarioTHR2
